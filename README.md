@@ -1,6 +1,6 @@
 # FeedMe_AndroidAppFinalProject
-# This is an App designed based on Sony Xperia Z and the same size as it.
-# May not suit other phone size.
+---This is an App designed based on Sony Xperia Z and the same size as it.
+---May not suit other phone size.
 
 This is an Android app that can help you
 
