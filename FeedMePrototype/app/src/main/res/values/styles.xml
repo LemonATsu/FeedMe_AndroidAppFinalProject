@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+     </style>
+
+    <style name="toggleButton_H" parent="Theme.AppCompat">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle_H</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+    <style name="Widget.Button.Toggle_H" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/plate_health_toggle_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+    <style name="toggleButton_B" parent="Theme.AppCompat">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle_B</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+    <style name="Widget.Button.Toggle_B" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/plate_bad_toggle_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+</resources>

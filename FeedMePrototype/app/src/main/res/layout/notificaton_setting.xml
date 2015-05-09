@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/notification_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"></RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_first"
+        android:hint="@string/breakfast"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="117dp"
+        android:layout_marginEnd="117dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_second"
+        android:hint="@string/lunch"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/time_first"
+        android:layout_alignLeft="@+id/time_first"
+        android:layout_alignStart="@+id/time_first" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_third"
+        android:hint="@string/dinner"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/time_second"
+        android:layout_alignLeft="@+id/time_second"
+        android:layout_alignStart="@+id/time_second" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox_first"
+        android:checked="false"
+        android:layout_below="@+id/notification_setting"
+        android:layout_alignLeft="@+id/checkBox_second"
+        android:layout_alignStart="@+id/checkBox_second" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox_second"
+        android:checked="false"
+        android:layout_below="@+id/time_first"
+        android:layout_alignLeft="@+id/checkBox_third"
+        android:layout_alignStart="@+id/checkBox_third" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox_third"
+        android:checked="false"
+        android:layout_below="@+id/time_second"
+        android:layout_toLeftOf="@+id/time_third"
+        android:layout_toStartOf="@+id/time_third" />
+</RelativeLayout>

@@ -1,0 +1,354 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="prototype.feedme.cat.prototype.fragment.FeedingFragment"
+    >
+
+
+    <ToggleButton
+        style="@style/toggleButton_H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_health_toggle_bg"
+        android:id="@+id/toggleButton_1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        style="@style/toggleButton_H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_health_toggle_bg"
+        android:id="@+id/toggleButton_2"
+        android:layout_alignTop="@+id/toggleButton_1"
+        android:layout_toRightOf="@+id/toggleButton_1"
+        android:layout_toEndOf="@+id/toggleButton_1"
+        android:checked="false" />
+
+    <ToggleButton
+        style="@style/toggleButton_H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_health_toggle_bg"
+        android:id="@+id/toggleButton_3"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/toggleButton_2"
+        android:layout_toEndOf="@+id/toggleButton_2" />
+
+    <ToggleButton
+        style="@style/toggleButton_H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_health_toggle_bg"
+        android:id="@+id/toggleButton_4"
+        android:checked="false"
+        android:layout_below="@+id/toggle_text_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        style="@style/toggleButton_H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_health_toggle_bg"
+        android:id="@+id/toggleButton_5"
+        android:checked="false"
+        android:layout_alignTop="@+id/toggleButton_4"
+        android:layout_toLeftOf="@+id/toggleButton_6"
+        android:layout_toStartOf="@+id/toggleButton_6" />
+
+    <ToggleButton
+        style="@style/toggleButton_H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_health_toggle_bg"
+        android:id="@+id/toggleButton_6"
+        android:checked="false"
+        android:layout_alignTop="@+id/toggleButton_5"
+        android:layout_alignLeft="@+id/toggle_text_3"
+        android:layout_alignStart="@+id/toggle_text_3" />
+
+    <ToggleButton
+        style="@style/toggleButton_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_bad_toggle_bg"
+        android:id="@+id/toggleButton_7"
+        android:checked="false"
+        android:layout_below="@+id/toggle_text_4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        style="@style/toggleButton_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_bad_toggle_bg"
+        android:id="@+id/toggleButton_8"
+        android:checked="false"
+        android:layout_alignBottom="@+id/toggleButton_7"
+        android:layout_toRightOf="@+id/toggleButton_7"
+        android:layout_toEndOf="@+id/toggleButton_7" />
+
+    <ToggleButton
+        style="@style/toggleButton_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_bad_toggle_bg"
+        android:id="@+id/toggleButton_9"
+        android:checked="false"
+        android:layout_alignBottom="@+id/toggleButton_8"
+        android:layout_alignLeft="@+id/toggleButton_6"
+        android:layout_alignStart="@+id/toggleButton_6" />
+
+    <ToggleButton
+        style="@style/toggleButton_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_bad_toggle_bg"
+        android:id="@+id/toggleButton_10"
+        android:checked="false"
+        android:layout_below="@+id/toggle_text_7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        style="@style/toggleButton_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_bad_toggle_bg"
+        android:id="@+id/toggleButton_11"
+        android:checked="false"
+        android:layout_alignBottom="@+id/toggleButton_10"
+        android:layout_toRightOf="@+id/toggleButton_10"
+        android:layout_toEndOf="@+id/toggleButton_10" />
+
+    <ToggleButton
+        style="@style/toggleButton_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plate_bad_toggle_bg"
+        android:id="@+id/toggleButton_12"
+        android:checked="false"
+        android:layout_alignBottom="@+id/toggleButton_11"
+        android:layout_alignLeft="@+id/toggleButton_9"
+        android:layout_alignStart="@+id/toggleButton_9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      便當"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_1"
+        android:layout_below="@+id/toggleButton_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      蔬果"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_2"
+        android:layout_alignTop="@+id/toggle_text_1"
+        android:layout_alignLeft="@+id/toggleButton_2"
+        android:layout_alignStart="@+id/toggleButton_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      雜糧"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_3"
+        android:layout_alignTop="@+id/toggle_text_2"
+        android:layout_alignLeft="@+id/toggleButton_3"
+        android:layout_alignStart="@+id/toggleButton_3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      豆類"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_4"
+        android:layout_below="@+id/toggleButton_4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/toggleButton_5"
+        android:layout_toLeftOf="@+id/toggleButton_5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      瘦肉"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_5"
+        android:layout_below="@+id/toggleButton_5"
+        android:layout_alignLeft="@+id/toggleButton_5"
+        android:layout_alignStart="@+id/toggleButton_5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      奶類"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_6"
+        android:layout_below="@+id/toggleButton_6"
+        android:layout_alignLeft="@+id/toggleButton_6"
+        android:layout_alignStart="@+id/toggleButton_6"
+        android:layout_alignRight="@+id/toggleButton_6"
+        android:layout_alignEnd="@+id/toggleButton_6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      炸物"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_7"
+        android:layout_below="@+id/toggleButton_7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/toggle_text_8"
+        android:layout_toStartOf="@+id/toggle_text_8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      速食"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_8"
+        android:layout_below="@+id/toggleButton_8"
+        android:layout_toRightOf="@+id/toggleButton_7"
+        android:layout_toLeftOf="@+id/toggle_text_9"
+        android:layout_toStartOf="@+id/toggle_text_9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      泡麵"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_9"
+        android:layout_below="@+id/toggleButton_8"
+        android:layout_toRightOf="@+id/toggleButton_8"
+        android:layout_alignRight="@+id/toggleButton_9"
+        android:layout_alignEnd="@+id/toggleButton_9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      零嘴"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_10"
+        android:layout_below="@+id/toggleButton_10"
+        android:layout_toLeftOf="@+id/toggleButton_11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      甜食"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_11"
+        android:layout_alignTop="@+id/toggle_text_10"
+        android:layout_toRightOf="@+id/toggleButton_10"
+        android:layout_alignRight="@+id/toggleButton_11"
+        android:layout_alignEnd="@+id/toggleButton_11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    醃製品"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/toggle_text_12"
+        android:layout_alignTop="@+id/toggle_text_11"
+        android:layout_alignLeft="@+id/toggleButton_12"
+        android:layout_alignStart="@+id/toggleButton_12"
+        android:layout_alignRight="@+id/toggleButton_12"
+        android:layout_alignEnd="@+id/toggleButton_12" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feed_btn"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/feed_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/toggleButton_9"
+        android:layout_toEndOf="@+id/toggleButton_9"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:src="@drawable/feed_to_log_tag" />
+
+
+</RelativeLayout>

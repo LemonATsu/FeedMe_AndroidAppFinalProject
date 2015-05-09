@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/cat_activity_bg"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cat_act_status_nor"
+        android:src="@drawable/cat_act_nor_cat"
+        android:layout_marginBottom="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cloud_img"
+        android:src="@drawable/cloud"
+        android:layout_above="@+id/cat_act_status_nor"
+        android:layout_toRightOf="@+id/cat_act_status_nor"
+        android:layout_toEndOf="@+id/cat_act_status_nor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cloud_img_2"
+        android:src="@drawable/cloud_sizes"
+        android:layout_alignBottom="@+id/Days_text"
+        android:layout_toLeftOf="@+id/cloud_img"
+        android:layout_toStartOf="@+id/cloud_img" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Days"
+        android:id="@+id/Days_text"
+        android:textSize = "26sp"
+        android:src="@drawable/daycount_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:gravity="center"
+        android:textSize = "26dp"
+        android:textColor="#000000"
+        android:id="@+id/Days_count"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_alignBottom="@+id/cloud_img_2"
+        android:layout_alignLeft="@+id/cat_btn_feed"
+        android:layout_alignStart="@+id/cat_btn_feed" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cat_btn_feed"
+        android:src="@drawable/cat_button_feed"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/cat_act_status_nor"
+        android:layout_toStartOf="@+id/cat_act_status_nor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cat_btn_log"
+        android:src="@drawable/cat_button_log"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cat_btn_clk"
+        android:src="@drawable/cat_button_clock"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/cat_act_status_nor"
+        android:layout_toEndOf="@+id/cat_act_status_nor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cat_act_status_ill"
+        android:layout_alignBottom="@+id/cat_act_status_nor"
+        android:layout_alignLeft="@+id/Days_count"
+        android:layout_alignStart="@+id/Days_count"
+        android:src="@drawable/cat_act_ill_cat"
+        android:layout_alignRight="@+id/cat_btn_clk"
+        android:layout_alignEnd="@+id/cat_btn_clk" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cat_act_status_wel"
+        android:src="@drawable/cat_act_wel_cat"
+        android:layout_alignTop="@+id/cat_act_status_nor"
+        android:layout_toRightOf="@+id/Days_text"
+        android:layout_toEndOf="@+id/Days_text" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cat_act_status_dead"
+        android:src="@drawable/cat_act_dead_cat"
+        android:layout_above="@+id/cat_btn_feed"
+        android:layout_alignLeft="@+id/cat_act_status_nor"
+        android:layout_alignStart="@+id/cat_act_status_nor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="點擊墓碑來重新養貓"
+        android:visibility="invisible"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:id="@+id/dead_text"
+        android:layout_above="@+id/cat_act_status_nor"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

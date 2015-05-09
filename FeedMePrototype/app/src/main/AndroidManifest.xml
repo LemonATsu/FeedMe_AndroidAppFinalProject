@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="prototype.feedme.cat.prototype" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <receiver android:name=".notification.MyReceiver" />
+
+        <service android:name=".notification.NotificationService" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Rank Activity -->
+        <activity
+            android:name=".activity.RankActivity"
+            android:label="@string/title_activity_cat"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <!-- Cat Activity -->
+        <activity
+            android:name=".activity.CatActivity"
+            android:label="@string/title_activity_cat"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <!-- Feeding Activity -->
+        <activity
+            android:name=".activity.FeedingActivitiy"
+            android:label="@string/title_activity_feeding_activitiy"
+            android:parentActivityName=".activity.CatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.CatActivity" />
+        </activity>
+        <activity
+            android:name=".activity.test"
+            android:label="@string/title_activity_test" >
+        </activity>
+
+        <service
+            android:name=".util.MusicService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="prototype.feedme.cat.prototype.activity.RankActivity"
+    android:background="@drawable/rank_activity_bg">
+
+    <TextView android:text="RANKING" android:layout_width="wrap_content"
+        android:textSize="48dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rank_progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false" />
+
+    <ListView
+        android:layout_width="267dp"
+        android:layout_height="400dp"
+        android:id="@+id/rank_list"
+        android:layout_below="@+id/editText_upload"
+        android:layout_alignLeft="@+id/editText_upload"
+        android:layout_alignStart="@+id/editText_upload" />
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+
+        android:hint="輸入名字上傳紀錄"
+        android:imeOptions="actionDone"
+        android:ems="10"
+        android:id="@+id/editText_upload"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload!"
+        android:id="@+id/upload_btn"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refresh_btn"
+        android:src="@drawable/ic_action_refresh"
+        android:layout_above="@+id/upload_btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+</RelativeLayout>

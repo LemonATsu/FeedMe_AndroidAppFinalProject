@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="prototype.feedme.cat.prototype.fragment.LogFragment"
+    android:background="@drawable/logfragment_bg">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:layout_width="335dp"
+        android:layout_height="500dp"
+        android:id="@+id/fragmnent_log_list"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_below="@+id/date_search_edit"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="yyyy-mm-dd"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:shadowColor="#000000"
+        android:id="@+id/date_search_edit"
+        android:imeOptions="actionDone"
+        android:layout_alignBottom="@+id/log_search_btn"
+        android:layout_toLeftOf="@+id/log_search_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/log_search_btn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="輸入日期來查詢該日的飲食情形。 格式: yyyy-mm-dd  ex:2000-10-10"
+        android:textSize="20dp"
+        android:shadowColor="#000000"
+        android:visibility="invisible"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:id="@+id/hintText"
+        android:layout_alignTop="@+id/fragmnent_log_list"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
